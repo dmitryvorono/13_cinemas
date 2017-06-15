@@ -94,6 +94,7 @@ def output_movies_to_console(movies):
     for m in output_movies:
         print('{0} {1}'.format(m['title'], m['rating']))
 
+
 def create_parser():
     parser = argparse.ArgumentParser(description='This script generate rating films showing in Moscow. List cinemas get in afish.ru, rating - kinopoisk.ru')
     parser.add_argument('-c', '--cinema', type=int, help='If input in rating will not include films with count_cinema less than input value')
